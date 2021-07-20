@@ -8,6 +8,7 @@
 #' @importFrom DT DTOutput
 #' @noRd
 app_ui <- function(request) {
+  golem_add_external_resources()
   shinydashboard::dashboardPage(skin="green",
     shinydashboard::dashboardHeader(title = "SoyFungiGCN"),
     shinydashboard::dashboardSidebar(
@@ -22,8 +23,14 @@ app_ui <- function(request) {
              "The input gene IDs must be based on the Wm82.a2.v1 assembly. 
              Your input gene will not be present in the network if its 
              median expression across samples is lower than 5 TPM."),
-      shiny::tags$img(src="www/logo.png", width=163, height=180,
-                      style="display: block; margin-left: auto; margin-right: auto;")
+      shiny::tags$div(
+        align = "center",
+        shiny::tags$img(
+          src = "www/logo.png", width = "70%", align = "center"
+        )
+      )
+      # shiny::tags$img(src="www/logo.png", width=163, height=180,
+      #                 style="display: block; margin-left: auto; margin-right: auto;")
     ),
     shinydashboard::dashboardBody(
       shiny::fluidRow(

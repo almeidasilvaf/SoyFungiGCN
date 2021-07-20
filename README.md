@@ -24,7 +24,8 @@ remotes::install_github("almeidasilvaf/SoyFungiGCN")
 Once the package is installed, you can run the Shiny app with:
 
 ``` r
-SoyFungiGCN::run_app()
+library(SoyFungiGCN)
+run_app()
 ```
 
 ## Code of Conduct
