@@ -1,0 +1,43 @@
+Package: SoyFungiGCN
+Title: Gene coexpression network of soybean infected with pathogenic fungi
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+    person(given = "Fabrício",
+           family = "Almeida-Silva",
+           role = c("aut", "cre"),
+           email = "fabricio_almeidasilva@hotmail.com",
+           comment = c(ORCID = "0000-0002-5314-2964")),
+    person(given = "Thiago",
+           family = "Venancio",
+           role = "aut",
+           comment = c(ORCID = "0000-0002-2215-8082"))
+    )
+Description: This is a Shiny app to explore a gene coexpression network
+    inferred from RNA-seq data of soybean tissues infected with
+    phytopathogenic fungi. This is a data product resulting from the paper
+    "Integration of genome-wide association studies and gene coexpression 
+    networks unveils promising soybean resistance genes against five 
+    common fungal pathogens".
+License: GPL-3
+Imports: 
+    config (>= 0.3.1),
+    DT,
+    ggnetwork,
+    ggplot2,
+    golem (>= 0.3.1),
+    processx,
+    shiny (>= 1.6.0),
+    shinydashboard,
+    utils
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.1
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+Depends: 
+    R (>= 4.1)
